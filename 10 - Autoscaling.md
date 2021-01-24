@@ -3,7 +3,7 @@
 ## Scale the frontend application
 1. Change the resources for the frontend deployment
 ```
-kubectl set resources deploy ecsdemo-frontend --requests=cpu=100m
+kubectl set resources deploy ecsdemo-frontend --requests=cpu=200m
 ```
 2. Do a rolling restart for this to take effect.
 ```
