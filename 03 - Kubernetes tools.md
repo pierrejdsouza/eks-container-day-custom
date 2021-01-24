@@ -25,7 +25,7 @@ sudo yum -y install jq gettext bash-completion moreutils
 ```
 echo 'yq() {
   docker run --rm -i -v "${PWD}":/workdir mikefarah/yq "$@"
-}' | tee -a ~
+}' | tee -a ~/.bashrc && source ~/.bashrc
 ```
 
 ## Verify the binaries are in the path and executable
