@@ -76,7 +76,7 @@ aws configure get default.region
 ## Validate the IAM role
 Use the GetCallerIdentity CLI command to validate that the Cloud9 IDE is using the correct IAM role.
 ```
-aws sts get-caller-identity --query Arn | grep eksworkshop-admin -q && echo "IAM role valid" || echo "IAM role NOT valid"
+aws sts get-caller-identity --query Arn | grep TeamRole -q && echo "IAM role valid" || echo "IAM role NOT valid"
 ```
 If the IAM role is not valid, DO NOT PROCEED. Go to your EventEngine page, click on the AWS Console and copy the Credentials / Cli Snippets. It should look like this
 ```
