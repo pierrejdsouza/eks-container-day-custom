@@ -38,6 +38,7 @@ docker push 194915917387.dkr.ecr.ap-southeast-1.amazonaws.com/ecsdemo-frontend:l
 ```
 
 5. Repeat these steps for ecsdemo-nodejs and ecsdemo-crystal
+6. Check and verify that your image has been uploaded/pushed to the ECR repository. You can do this by going to the ECR page in the AWS Management Console.
 
 If you get an error message saying you have "No auth credentials", do the following
 ```
