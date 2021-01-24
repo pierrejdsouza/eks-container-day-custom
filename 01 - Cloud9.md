@@ -55,6 +55,10 @@ Configure our aws cli with our current region as default
 export ACCOUNT_ID=$(aws sts get-caller-identity --output text --query Account)
 export AWS_REGION=$(curl -s 169.254.169.254/latest/dynamic/instance-identity/document | jq -r '.region')
 ```
+If jq is not installed, please run the following command
+```
+sudo yum -y install jq gettext bash-completion moreutils
+```
 
 Check if AWS_REGION is set to desired region
 ```
