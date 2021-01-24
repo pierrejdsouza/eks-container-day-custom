@@ -1,6 +1,6 @@
 # Docker Basics
 
-## Getting to now Docker
+## Getting to know Docker
 In this step, you check if Docker is installed on the AWS Cloud9 workspace, and download and run a standard container image of the popular web server Nginx.
 
 1. Let’s start by running docker --version to confirm that both the client and server are there and working.
